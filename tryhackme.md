@@ -13,3 +13,15 @@
 - Testando nomes comuns automaticamente
 - Achei uma página oculta do banco falso e acessei a conta 8881
 - Conceito: segurança ofensiva = atacar para achar falhas
+  
+## TryHackMe — Defensive Security Intro
+
+- Cenário: alerta na ferramenta de análise (SIEM)
+- Padrão: várias tentativas de acesso em página de admin
+- Ação: identifiquei o ID do atacante e bloqueei o acesso ao sistema
+- Isso é trabalho de Analista SOC + resposta a incidente (DFIR)
+
+### Conexão com a sala anterior
+- Dia 1: eu era o atacante (dirb no BankFake)
+- Hoje: eu era quem detectou e bloqueou esse tipo de ataque
+- Mesmo cenário, dois lados
