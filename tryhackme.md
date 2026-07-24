@@ -25,3 +25,11 @@
 - Dia 1: eu era o atacante (dirb no BankFake)
 - Hoje: eu era quem detectou e bloqueou esse tipo de ataque
 - Mesmo cenário, dois lados
+
+## Seção 1 — Introdução à Cibersegurança (COMPLETA)
+
+### Careers in Cyber
+- Panorama das carreiras da área
+- Meu resultado no teste de perfil: Analista de Segurança
+- Área com mais vagas de entrada no Brasil
+- Decisão real fica pro mês 7, depois de experimentar cada lado
