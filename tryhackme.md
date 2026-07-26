@@ -33,3 +33,19 @@
 - Meu resultado no teste de perfil: Analista de Segurança
 - Área com mais vagas de entrada no Brasil
 - Decisão real fica pro mês 7, depois de experimentar cada lado
+
+- ## Seção 2 — Fundamentos de Computador
+
+### Peças do PC
+- Nomes dos componentes e onde cada um vai na montagem
+
+### Processo de inicialização (boot) — 5 etapas
+1. Press power button — botão de ligar dá o sinal para a CPU
+2. Firmware starts — firmware (BIOS/UEFI) na placa-mãe é o primeiro a rodar
+3. POST — Power-On Self-Test, testa o hardware (memória, teclado, etc.)
+4. Seleção do boot device — escolhe de onde dar boot (HD, SSD, USB)
+5. Start bootloader — carrega o bootloader, que inicia o sistema operacional
+
+- Conteúdo denso, registrado para revisar. Vai fixar por repetição ao longo do curso.
+- Gancho com cyber: firmware e bootloader são alvo de malware avançado (rodam antes do sistema e do antivírus). Assunto de forense/malware mais à frente.
+
