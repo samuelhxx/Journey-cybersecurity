@@ -49,3 +49,15 @@
 - Conteúdo denso, registrado para revisar. Vai fixar por repetição ao longo do curso.
 - Gancho com cyber: firmware e bootloader são alvo de malware avançado (rodam antes do sistema e do antivírus). Assunto de forense/malware mais à frente.
 
+## Seção 2 — Tipos de Computador
+
+- **Desktop** — computador fixo, de mesa. Comum em escritórios. Alvo de ataque interno.
+- **Laptop** — portátil. Mobilidade é a vantagem e o risco (roubo, Wi-Fi público). Costuma ter criptografia de disco.
+- **Smartphone** — computador de bolso. Guarda muita informação sensível (banco, fotos, mensagens). Grande alvo de ataque.
+- **Servidor** — a máquina que "serve" os clientes (modelo cliente-servidor). Fica ligado 24h. Alvo mais valioso: dominar o servidor = acesso aos dados de todos os clientes.
+- **Embarcados / IoT** — computadores dentro de outras coisas (Alexa, câmera, roteador, geladeira inteligente, sensores). Sistema simples embutido. Porta de entrada fácil porque muita gente não protege.
+
+### Ligação com cyber
+- Cada tipo de dispositivo é uma porta diferente para ataque
+- O atacante escolhe a porta mais fraca (geralmente IoT esquecido, não o PC protegido)
+- Preciso saber quais dispositivos existem numa rede para entender por onde ela pode ser atacada
