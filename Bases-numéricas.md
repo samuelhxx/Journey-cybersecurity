@@ -56,3 +56,43 @@
 - Zero à esquerda (na frente) não vale nada, pode tirar
 - Ex: 01100 = 1100
 - Zeros do meio e do fim FICAM (valem posição)
+
+## Aula 3 — Octal e Hexadecimal
+
+### As bases e seus algarismos
+- Binário (base 2): 0 e 1
+- Octal (base 8): 0 a 7 (8 algarismos)
+- Decimal (base 10): 0 a 9 (10 algarismos)
+- Hexadecimal (base 16): 0 a 9 e A,B,C,D,E,F
+  - A=10, B=11, C=12, D=13, E=14, F=15
+
+### Decimal → Octal / Hexadecimal (método da divisão)
+- Divide pela base, anota os restos, lê de baixo pra cima
+- Octal: divide por 8 / Hexadecimal: divide por 16
+- No hexa, se o resto der 10+, vira letra (10=A ... 15=F)
+
+### Conversão entre bases (método das potências)
+- Passa pelo decimal no meio
+- Ex: binário 1100 → decimal (8+4=12) → hexadecimal (C)
+- Ex: hexadecimal F → decimal (15) → binário (1111)
+
+### Notação
+- 0x na frente = marca que indica hexadecimal (ex: 0xFF)
+- O "0" do 0x não é valor, é só rótulo
+
+- ## Aula 4 — Macete de conversão (agrupamento de bits)
+
+### Binário → Octal (grupos de 3)
+- Agrupa os bits de 3 em 3, da direita pra esquerda
+- Cada grupo de 3 bits vira um algarismo de 0 a 7
+- Se faltar bit no último grupo, completa com zero à esquerda
+
+### Binário → Hexadecimal (grupos de 4)
+- Agrupa os bits de 4 em 4, da direita pra esquerda
+- Cada grupo de 4 bits vira um símbolo de 0 a F
+- Se faltar bit no último grupo, completa com zero à esquerda
+
+### Por que funciona
+- É muito mais rápido que dividir ou usar potências
+- É o método que profissionais usam no dia a dia
+
