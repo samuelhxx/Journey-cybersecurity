@@ -95,4 +95,14 @@
 ### Por que funciona
 - É muito mais rápido que dividir ou usar potências
 - É o método que profissionais usam no dia a dia
+### O caminho inverso (base → binário)
+
+**Octal → Binário:** cada algarismo vira 3 bits
+- Ex: octal 5 vira 101, então junta tudo
+
+**Hexadecimal → Binário:** cada símbolo vira 4 bits
+- Ex: hexa A vira 1010, então junta tudo
+
+- É só expandir cada algarismo no seu grupo de bits
+- Contrário do agrupamento (em vez de juntar, você expande)
 
