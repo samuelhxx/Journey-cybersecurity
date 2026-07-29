@@ -80,3 +80,52 @@ O /8, /12, /16 é a máscara de rede (define o tamanho da faixa) → aprofunda n
 - Fixo x dinâmico (DHCP)
 - Cálculo de sub-redes → aula 12
 - Binário na prática → curso Bases Numéricas (Dias 4 e 5)
+
+## Aulas 9 e 10 — Comandos de Rede e Configuração de Roteador
+
+### ping (descobrir IP e testar conexão)
+- Comando: ping + endereço do site
+- Mostra o IP do servidor e o tempo de resposta
+- Funciona como um "sonar": manda sinal e espera resposta
+- Descoberta prática: pinguei o site da AS Construction, resposta de 7ms com 32 bytes
+  - 7ms = tempo de ida e volta (rápido = boa conexão)
+  - 32 bytes = tamanho do pacote de teste
+
+### ping 127.0.0.1 (loopback / localhost)
+- Testa a própria máquina ("eu estou funcionando?")
+- Se responde: rede interna do PC OK, problema é pra fora
+- Se não responde: problema interno na própria máquina
+- Primeiro teste de diagnóstico de rede
+
+### tracert (rastrear rota)
+- Comando: tracert + endereço do site
+- Mostra o CAMINHO completo até o servidor (cada roteador/salto)
+- Diferente do ping (que só confirma se está online)
+- Descoberta prática: rastreei o site da AS Construction e descobri que está hospedado no GitHub Pages
+- Isso é reconhecimento de infraestrutura: descobrir ONDE e COMO o alvo está hospedado
+
+### ipconfig (informações da própria máquina)
+- Mostra meu IP, máscara de rede e gateway (IP do roteador)
+- Meu gateway: 192.168.1.1
+- Em cyber: primeiro comando pra "se localizar" na rede
+- Atacante que invade uma máquina roda isso pra saber onde caiu
+
+### Acessar painel do roteador
+- Digita o gateway (192.168.1.1) na barra de endereço do navegador
+- Abre a tela de configuração do roteador
+- No meu caso não abriu (nem no PC nem no celular) = bloqueio da operadora
+
+### MAC address e clonagem de MAC
+- MAC = número único de cada placa de rede (identidade fixa do aparelho)
+- IP muda, MAC é fixo de fábrica
+- Clonar MAC = copiar a identidade de um aparelho pra outro
+- Uso legítimo: manter acesso ao trocar de aparelho (antigo pro novo)
+- Uso malicioso (MAC spoofing): se passar por aparelho autorizado pra entrar em rede protegida
+- Mesma técnica, intenção diferente
+
+### Comandos aprendidos (resumo)
+| Comando | O que faz |
+|---------|-----------|
+| ping | descobre IP e testa se está online |
+| tracert | mostra o caminho até o servidor |
+| ipconfig | mostra minhas infos de rede |
