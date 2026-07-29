@@ -61,3 +61,40 @@
 - Cada tipo de dispositivo é uma porta diferente para ataque
 - O atacante escolhe a porta mais fraca (geralmente IoT esquecido, não o PC protegido)
 - Preciso saber quais dispositivos existem numa rede para entender por onde ela pode ser atacada
+
+## Seção 2 — Client-Server Basics (Noções Cliente-Servidor)
+
+### Conceito
+- Cliente = quem pede (navegador). Servidor = quem entrega (guarda o site)
+- O cliente SEMPRE inicia o pedido
+- Request (pedido) e Response (resposta) = a conversa entre os dois
+
+### Termos importantes
+- **IP address** (Internet Protocol address) = o endereço de um servidor
+- **Port** (porta) = identifica um serviço específico rodando no servidor
+- **DNS** (Domain Name Service) = traduz o nome do site (ex: site.com) para o IP. Funciona tipo um GPS
+- **Protocolo** = as regras de como cliente e servidor se comunicam
+
+### HTTP e HTTPS
+- HTTP = protocolo da web (o "idioma" entre navegador e servidor)
+- HTTPS = o mesmo, com S de Secure (criptografado, protegido)
+- É "stateless" = sem memória, cada pedido é independente
+- Sites usam cookies/tokens de sessão pra "lembrar" do login (importante em cyber: alvo de ataque)
+
+### Métodos HTTP
+- GET = buscar/pegar um recurso (o mais comum)
+- POST = enviar dados / PUT = atualizar / DELETE = apagar
+
+### Prática (F12 → Network)
+- Inspecionei requisições GET reais, ao vivo
+- Campos: Scheme (http/https), Host, Filename, Address (IP), Status
+- Status 200 = sucesso / 304 = não mudou, usa cache
+- No laboratório o Address era 127.0.0.1 (site rodando na própria máquina)
+- Testei no site real da AS Construction: 29 requests pra montar 1 página
+  - Cada peça (logo, css, js) é um GET separado
+  - Site hospedado no GitHub Pages
+
+### Ligação com cyber
+- A aba Network é ferramenta de reconhecimento web
+- Revela tecnologias, arquivos e comportamento do site
+- Primeiro passo antes de testar a segurança de uma aplicação (vou aprofundar no PortSwigger)
