@@ -129,3 +129,38 @@ O /8, /12, /16 é a máscara de rede (define o tamanho da faixa) → aprofunda n
 | ping | descobre IP e testa se está online |
 | tracert | mostra o caminho até o servidor |
 | ipconfig | mostra minhas infos de rede |
+
+## Aula 11 — Configurações Avançadas de Wi-Fi
+
+### Tipos de segurança Wi-Fi (criptografia)
+- WEP = mais antigo e MUITO fraco (nunca usar)
+- WPA = ultrapassado
+- WPA2 = padrão atual, seguro
+- WPA3 = mais novo e mais forte (melhor opção)
+- Regra: WEP nunca / WPA2 bom / WPA3 melhor
+
+### Pessoal x Empresarial
+- Pessoal (PSK) = uma senha única pra todos (uso em casa)
+- Empresarial (Enterprise) = login individual por pessoa, servidor RADIUS (empresas)
+- Empresarial é mais seguro: corta acesso de UMA pessoa sem trocar tudo
+
+### Modos puro x misto
+- Puro = aceita só uma versão (mais seguro)
+- Misto = aceita duas versões (mais compatível, menos seguro)
+- No misto, a rede fica tão segura quanto a versão MAIS FRACA
+- Princípio: "a corrente é tão forte quanto o elo mais fraco"
+
+### Padrões de Wi-Fi (VELOCIDADE, não confundir com segurança)
+- B (antigo/lento) → G → N → AC → AX/Wi-Fi 6 (novo/rápido)
+- É tipo gerações de celular (3G, 4G, 5G)
+- WPA = segurança / B-G-N = velocidade (coisas diferentes!)
+
+### Canais do Wi-Fi
+- Canais = faixas de uma estrada
+- Vários roteadores no mesmo canal = interferência
+- Solução: programa mostra roteadores e canais → escolher canal vazio
+- Esse programa é ferramenta de RECONHECIMENTO de redes sem fio (usado em pentest de Wi-Fi)
+
+### Posicionamento do roteador
+- Lugar central, alto, longe de parede grossa e eletrônicos
+- É sobre desempenho físico, não segurança
