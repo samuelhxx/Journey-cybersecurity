@@ -164,3 +164,24 @@ O /8, /12, /16 é a máscara de rede (define o tamanho da faixa) → aprofunda n
 ### Posicionamento do roteador
 - Lugar central, alto, longe de parede grossa e eletrônicos
 - É sobre desempenho físico, não segurança
+
+## Seção 2 — Virtualização
+
+### Conceitos
+- Virtualização = um computador físico age como vários computadores separados
+- Hipervisor = o software "gerente" que cria e controla as VMs (ex: VirtualBox, VMware)
+- Máquina Virtual (VM) = computador virtual inteiro dentro do real, com sistema próprio
+- Container (Recipiente) = caixa isolada e leve pra UM aplicativo, compartilha o sistema do host
+- Imagem de container = a "receita/modelo" pra criar containers
+- Portas de rede = pontos de entrada numerados que apps usam pra falar pela rede
+
+### VM x Container
+- São independentes por natureza
+- Na prática, às vezes rodam juntos (containers dentro de VM) pra somar vantagens
+
+### Benefícios (destaque pra cyber)
+- Teste SEGURO pra cibersegurança (laboratório isolado)
+- Economia de custo, uso melhor de recursos, portabilidade, escalabilidade
+
+### Próximo: Cloud (nuvem)
+- Nuvem é construída em cima de virtualização + containers + automação
