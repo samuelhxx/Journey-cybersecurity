@@ -165,23 +165,26 @@ O /8, /12, /16 é a máscara de rede (define o tamanho da faixa) → aprofunda n
 - Lugar central, alto, longe de parede grossa e eletrônicos
 - É sobre desempenho físico, não segurança
 
-## Seção 2 — Virtualização
+### Máscara de rede
+- Separa a parte REDE da parte HOST dentro do IP
+- Onde tem 255 = parte da rede (fixa). Onde tem 0 = parte dos hosts (varia)
+- Ex: IP 192.168.1.10 / máscara 255.255.255.0 → rede = 192.168.1, host = último número
+- /24 = a mesma máscara escrita curto (255.255.255.0 = 24 bits ligados)
 
-### Conceitos
-- Virtualização = um computador físico age como vários computadores separados
-- Hipervisor = o software "gerente" que cria e controla as VMs (ex: VirtualBox, VMware)
-- Máquina Virtual (VM) = computador virtual inteiro dentro do real, com sistema próprio
-- Container (Recipiente) = caixa isolada e leve pra UM aplicativo, compartilha o sistema do host
-- Imagem de container = a "receita/modelo" pra criar containers
-- Portas de rede = pontos de entrada numerados que apps usam pra falar pela rede
+### Broadcast
+- Último endereço da rede, fala com TODOS os hosts de uma vez
+- Ex: 192.168.1.255
+- Analogia: megafone (todos escutam de uma vez)
 
-### VM x Container
-- São independentes por natureza
-- Na prática, às vezes rodam juntos (containers dentro de VM) pra somar vantagens
+### Estrutura da rede (exemplo /24)
+- Rede: 192.168.1.0 (primeiro, identifica a rede)
+- Hosts: 192.168.1.1 até .254 (as máquinas usáveis)
+- Broadcast: 192.168.1.255 (último)
+- 256 endereços - 2 reservados (rede e broadcast) = 254 hosts
 
-### Benefícios (destaque pra cyber)
-- Teste SEGURO pra cibersegurança (laboratório isolado)
-- Economia de custo, uso melhor de recursos, portabilidade, escalabilidade
-
-### Próximo: Cloud (nuvem)
-- Nuvem é construída em cima de virtualização + containers + automação
+### Máscara padrão de cada classe
+- Classe A → 255.0.0.0 (/8) → 1 octeto rede, 3 de host → milhões de hosts
+- Classe B → 255.255.0.0 (/16) → 2 octetos rede, 2 de host → milhares de hosts
+- Classe C → 255.255.255.0 (/24) → 3 octetos rede, 1 de host → 254 hosts
+- A máscara define quantos octetos são rede e quantos são host
+- Por isso cada classe tem sua máscara (mais host = classe mais "baixa")
