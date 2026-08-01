@@ -150,6 +150,7 @@ O /8, /12, /16 é a máscara de rede (define o tamanho da faixa) → aprofunda n
 - No misto, a rede fica tão segura quanto a versão MAIS FRACA
 - Princípio: "a corrente é tão forte quanto o elo mais fraco"
 
+
 ### Padrões de Wi-Fi (VELOCIDADE, não confundir com segurança)
 - B (antigo/lento) → G → N → AC → AX/Wi-Fi 6 (novo/rápido)
 - É tipo gerações de celular (3G, 4G, 5G)
@@ -188,3 +189,20 @@ O /8, /12, /16 é a máscara de rede (define o tamanho da faixa) → aprofunda n
 - Classe C → 255.255.255.0 (/24) → 3 octetos rede, 1 de host → 254 hosts
 - A máscara define quantos octetos são rede e quantos são host
 - Por isso cada classe tem sua máscara (mais host = classe mais "baixa")
+
+## Aula 12 — Sub-redes (CONCEITO OK, cálculo PENDENTE)
+
+### O que entendi (suficiente por agora)
+- Sub-rede = dividir uma rede grande em pedaços menores
+- Serve pra: separar por setor (RH, produção, convidados) e por SEGURANÇA
+- Segmentação: se invadem uma sub-rede, não alcançam as outras
+- Cada sub-rede tem sua própria: rede, faixa de hosts e broadcast
+- Máscara define onde termina a rede e começam os hosts (255 = rede, 0 = host)
+- /24 = 255.255.255.0
+
+### O que ficou PENDENTE (aprofundar depois)
+- O CÁLCULO de sub-rede à mão (octeto misto, divisão em bits)
+- O vídeo gratuito não ensina o "porquê", só o curso pago
+- Envolve binário aplicado, mas faltou a ponte entre binário e sub-rede
+- PLANO: aprender o cálculo na faculdade (ou curso dedicado) com explicação completa
+- Por agora: conceito entendido, cálculo é conteúdo avançado pra depois
