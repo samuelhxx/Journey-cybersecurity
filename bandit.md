@@ -27,3 +27,9 @@
 ### Comandos novos aprendidos
 - cd = entrar numa pasta
 - ls -a = ver arquivos ocultos
+
+## Level 4 → Level 5
+- Vários arquivos (-file00 a -file09), só UM tinha a senha (resto era lixo binário)
+- file ./* → mostrou o tipo de cada arquivo
+- Achei o -file07 como "ASCII text" (os outros eram "data"/binário)
+- cat 
