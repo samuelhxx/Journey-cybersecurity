@@ -10,3 +10,9 @@
 ## Level 2 → Level 3
 - Entrei no Level 2
 - Lição: cuidado com l(minúsculo), I(maiúsculo) e 1(número) - se confundem no terminal
+
+## Level 2 → Level 3
+- Arquivo com nome "--spaces in this filename--" (espaços E traços nas pontas)
+- Aspas resolvem espaços, ./ resolve os traços do início
+- Comando: cat "./--spaces in this filename--"
+- Senha do Level 3: 7ZZ2LFrykP2zEyvBl4m3clcL7tGYJPME
