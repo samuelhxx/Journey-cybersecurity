@@ -33,3 +33,15 @@
 - file ./* → mostrou o tipo de cada arquivo
 - Achei o -file07 como "ASCII text" (os outros eram "data"/binário)
 - cat 
+
+## Level 5 → Level 6
+- Senha estava em UMA subpasta entre 20 (maybehere00 a 19)
+- Pistas: arquivo de 1033 bytes, legível, não executável
+- find . -size 1033c → buscou pelo tamanho em todas as subpastas
+- Achei em maybehere07/file2
+- cat ./maybehere07/file2 → li a senha
+- Senha do Level 6: pXa26xhMWaC2SvDotA4r9EgZkulOeSBW
+
+### Comando novo (IMPORTANTE)
+- find = busca arquivos por critérios em todas as subpastas
+- find . -size 1033c → busca por tamanho (1033 bytes
