@@ -16,3 +16,14 @@
 - Aspas resolvem espaços, ./ resolve os traços do início
 - Comando: cat "./--spaces in this filename--"
 - Senha do Level 3: 7ZZ2LFrykP2zEyvBl4m3clcL7tGYJPME
+
+## Level 3 → Level 4
+- Tinha uma PASTA chamada "inhere" (a senha estava dentro dela)
+- cd inhere → entrei na pasta (cd = change directory, entrar em pasta)
+- ls -a → revelou arquivo oculto "...hiding-from-you" (começa com ponto = escondido)
+- cat ./ + nome → li o arquivo oculto
+- Senha do Level 4: xzTXq1rDJQVVAzdv5cHq1TQytTWufAMq
+
+### Comandos novos aprendidos
+- cd = entrar numa pasta
+- ls -a = ver arquivos ocultos
