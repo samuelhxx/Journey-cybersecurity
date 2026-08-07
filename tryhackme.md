@@ -120,3 +120,24 @@
 
 ### Próximo: Cloud (nuvem)
 - Nuvem é construída em cima de virtualização + containers + automação
+
+## Seção 2 — Computação em Nuvem (Cloud)
+
+### Tipos de nuvem
+- Pública = compartilhada por várias empresas, via internet (AWS, Google Cloud)
+- Privada = só de uma empresa, mais controle e segurança
+- Híbrida = mistura das duas
+
+### Modelos de serviço (analogia da pizza)
+- IaaS = alugar peças básicas (servidor, armazenamento), monta você mesmo → farinha e forno
+- PaaS = ambiente pronto pra criar apps, sem gerenciar servidor → massa pronta
+- SaaS = software pronto pra usar, sem instalar (Gmail, Zoom) → pizza pronta
+- EC2 = serviço da Amazon pra criar computadores na nuvem (exemplo de IaaS)
+
+### Benefícios
+- Escalabilidade, pague pelo que usa, alta disponibilidade, acesso global
+
+### Ligação com cyber
+- Cloud Security é uma das 4 especializações (a que mais cresce e melhor paga)
+- Nuvem mal configurada = causa de muitos vazamentos famosos
+- Proteger ambientes cloud (AWS, Azure) é área quente do mercado
