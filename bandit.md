@@ -59,3 +59,16 @@
 - -user / -group / -size = critérios de busca (podem ser combinados)
 - 2>/dev/null = joga mensagens de erro no "buraco negro" (limpa a tela)
 - caminho completo (começa com /) = endereço absoluto de um arquivo
+
+## Level 7 → Level 8
+- Senha dentro de data.txt (arquivo ENORME, milhares de linhas)
+- Senha estava do lado da palavra "millionth"
+- cat não resolve (despeja tudo, vira borrão)
+- grep millionth data.txt → achou só a linha com a palavra
+- Senha do Level 8: VR1ljMayciFxbnUokuQmJFw6QC9VKtub
+
+### Comando novo (MUITO importante)
+- grep = procura uma PALAVRA dentro de um arquivo, mostra só a linha
+- Estrutura: grep [palavra] [arquivo]
+- É tipo o Ctrl+F (localizar), mas no terminal
+- Diferença: find busca ARQUIVOS, grep busca TEXTO dentro de arquivos
