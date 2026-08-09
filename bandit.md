@@ -45,3 +45,17 @@
 ### Comando novo (IMPORTANTE)
 - find = busca arquivos por critérios em todas as subpastas
 - find . -size 1033c → busca por tamanho (1033 bytes
+
+## Level 6 → Level 7
+- Senha escondida no SISTEMA INTEIRO (não na pasta)
+- Pistas: dono bandit7, grupo bandit6, tamanho 33 bytes
+- find / -user bandit7 -group bandit6 -size 33c 2>/dev/null
+- Achei em /var/lib/dpkg/info/bandit7.password
+- cat + caminho completo → li a senha
+- Senha do Level 7: Bmnnvf82KzQlfxgAI2d1zYbr1u9pr3E3
+
+### Conceitos novos (importantes)
+- find / = busca a partir da raiz (sistema todo)
+- -user / -group / -size = critérios de busca (podem ser combinados)
+- 2>/dev/null = joga mensagens de erro no "buraco negro" (limpa a tela)
+- caminho completo (começa com /) = endereço absoluto de um arquivo
