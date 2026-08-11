@@ -141,3 +141,22 @@
 - Cloud Security é uma das 4 especializações (a que mais cresce e melhor paga)
 - Nuvem mal configurada = causa de muitos vazamentos famosos
 - Proteger ambientes cloud (AWS, Azure) é área quente do mercado
+
+## Seção 3 — Introdução aos Sistemas Operacionais
+
+### Conceitos
+- Sistema Operacional (SO) = software que gerencia hardware, programas e recursos (Windows, Linux, Android)
+- Espaço do Kernel (kernel space) = área mais poderosa e protegida; o kernel (núcleo) fala direto com o hardware
+- Espaço do Usuário (user space) = onde programas normais rodam, com permissões LIMITADAS (por segurança)
+- GUI = interface gráfica (janelas, ícones, cliques) - o visual
+- CLI = interface de linha de comando (digitar comandos) - é o que faço no Bandit!
+
+### Conexão com cyber
+- A divisão kernel x usuário é uma barreira de SEGURANÇA
+- Ataques avançados tentam furar essa barreira = escalação de privilégio (termo importante)
+- CLI é mais preciso/rápido; por isso profissionais de cyber usam tanto o terminal
+
+### Próximas salas da Seção 3
+- Noções Básicas do Windows
+- Linux CLI Básico (essa vai ser sua praia!)
+- Windows CLI Básico
