@@ -72,3 +72,10 @@ Comandos que aprendi na prática (Bandit). Consultar sempre que precisar.
 1. `ls` primeiro → ver o que tem
 2. Depois decide: `cat` (ler arquivo) ou `cd` (entrar em pasta)
 3. Se procura algo específico → `find`
+
+### Famílias de Linux e instalação
+- Debian/Ubuntu/Mint (a minha) → dpkg, apt, arquivos .deb
+- Red Hat/Fedora → rpm, dnf, arquivos .rpm
+- Arch → pacman
+- Cada família tem seu jeito de instalar
+- Kali Linux (cyber) é família Debian → usa apt/dpkg igual meu Mint (o que aprendo serve!)
